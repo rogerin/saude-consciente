@@ -1,4 +1,5 @@
-import { Home, Activity, FileText, Bell } from "lucide-react";
+
+import { Home, Activity, FileText, Bell, Upload } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Sidebar,
@@ -26,6 +27,11 @@ const menuItems = [
     title: "Protocolos",
     icon: FileText,
     url: "/protocols",
+  },
+  {
+    title: "Upload Dataset",
+    icon: Upload,
+    url: "/upload",
   },
   {
     title: "Notificações",

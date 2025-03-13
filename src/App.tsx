@@ -10,6 +10,7 @@ import InitialSetup from "./pages/InitialSetup";
 import HealthData from "./pages/HealthData";
 import Protocols from "./pages/Protocols";
 import Notifications from "./pages/Notifications";
+import Upload from "./pages/Upload";
 import NotFound from "./pages/NotFound";
 import AppLayout from "./components/AppLayout";
 
@@ -28,6 +29,7 @@ const App = () => (
               <Route path="/" element={<Dashboard />} />
               <Route path="/health-data" element={<HealthData />} />
               <Route path="/protocols" element={<Protocols />} />
+              <Route path="/upload" element={<Upload />} />
               <Route path="/notifications" element={<Notifications />} />
               <Route path="*" element={<NotFound />} />
             </Route>
