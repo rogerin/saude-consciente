@@ -1,12 +1,11 @@
-
 import { Home, Activity, FileText, Bell } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Sidebar,
   SidebarContent,
   SidebarGroup,
-  SidebarGroupContent,
   SidebarGroupLabel,
+  SidebarGroupContent,
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
@@ -49,7 +48,7 @@ const AppSidebar = () => {
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton
                     asChild
-                    active={location.pathname === item.url}
+                    isActive={location.pathname === item.url}
                   >
                     <Link to={item.url} className="flex items-center gap-2">
                       <item.icon className="h-5 w-5" />
